@@ -1,10 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
 
-function App() {
+function List() {
   return (
-  <>
-  <div className="card">
+    <>
+    <div className="card">
   <header>
     <h1>My Task List </h1>
     <form id="new-task-form">
@@ -31,11 +30,9 @@ function App() {
 </div>
 
     
-  
-  
-  
-  </>
-  );
+    
+    </>
+  )
 }
 
-export default App;
+export default List
