@@ -47,21 +47,18 @@ window.addEventListener('load', () => {
   form.addEventListener('submit', (e) => {
       e.preventDefault();
 
-      if (input.value !== '') {
-        const task = input.value;
+     
+      const task = input.value;
 
-        const task_el = document.createElement('div');
-        task_el.classList.add('task');
-  
-        const task_content_el = document.createElement('div');
-        task_content_el.classList.add('content');
-  
-        task_el.appendChild(task_content_el);
-  
-      }
-      else{
-        console.log('cant add empty list');
-      }
+      const task_el = document.createElement('div');
+      task_el.classList.add('task');
+
+      const task_content_el = document.createElement('div');
+      task_content_el.classList.add('content');
+
+      task_el.appendChild(task_content_el);
+
+      console.log('cant add empty list');
 
       const task_input_el = document.createElement('input');
       task_input_el.classList.add('text');
